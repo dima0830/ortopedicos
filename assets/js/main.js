@@ -18,6 +18,11 @@ $(".fancyb").fancybox();
     $('#tienda').carousel({
         interval:   8000
     });
+    
+     $('#tienda-mobil').carousel({
+        interval:   8000
+    });
+
 
     $('#tienda2').carousel({
         interval:   9000
@@ -28,5 +33,15 @@ $(".fancyb").fancybox();
     });
 
 
+var $height = $(window).scrollTop();
+  if($height > 50) {
+        $('#bucas').addClass('actve-scroll');
+    } else {
+        $('#bucas').removeClass('actve-scroll');
+    }
+
+
 });
+
+
 

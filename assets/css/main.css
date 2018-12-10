@@ -102,6 +102,9 @@ ul {
 a:link{
   text-decoration: none;
 }
+.boxup{
+  display: none;
+}
 .menu-sup {
 	background-color:#001277; 
 	font-family: 'Myriad Pro Light Condensed';
@@ -160,7 +163,7 @@ a:link{
 }
 /* mega menu*/
 .navbar {
-	 background-image: url(../img/fondo-head.png); 
+	 background-image: url(../img/header-nav.gif); 
   margin: 0;
 }
 .logo {
@@ -177,7 +180,8 @@ a:link{
   color: #001277;
 }
 .mega-dropdown a:focus, .mega-dropdown a:hover{
-	background: inherit !important;
+	background-color: rgba(0, 18, 119, 0.5)!important;
+  color: #fff;
 }
 
 .mega-dropdown a .icon-sub{
@@ -201,7 +205,7 @@ a:link{
     width: 100%;
     box-shadow: none;
     -webkit-box-shadow: none;
-    background-color: rgba(255, 255, 255,0.8);
+    background-color: rgba(255, 255, 255,0.9);
 }
 .mega-dropdown-menu > li > ul {
   padding: 0;
@@ -220,6 +224,8 @@ font-size: 18px;
 .mega-dropdown-menu > li ul > li > a:hover,
 .mega-dropdown-menu > li ul > li > a:focus {
   text-decoration: none;
+  background-color: rgba(240, 4, 127, 0.5)!important;
+  color: #fff;
 }
 .mega-dropdown-menu .dropdown-header {
   font-size: 18px;
@@ -257,31 +263,83 @@ font-size: 18px;
 }
 
 .busc2 input[type="search"]{
-  width: 100%; /*ancho por defecto*/
-    background: #fff url('../img/icon/lupa.png') no-repeat 9px center;
+  width: 90%; /*ancho por defecto*/
+    background: #fff url('../img/icon/lupa2.png') no-repeat 9px center;
+    border-radius: 4px;
+    font-size: 18px;
     border: 1px solid #001277;
-    padding: 9px 20px 9px 40px;
-
+    padding: 8px 20px 8px 50px;
+}
+ .menucar {
+  display: none;
+}
+.boxcar2{
+  float: right;
+  background-image: url(../img/icon/car2.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 32px;
+  padding: 0 18px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Myriad Pro Condensed';
+  margin: -5px 0;
+} 
+.slide .imgmobil {
+  display: none !important;
+}
+#tienda-mobil {
+  display: none;
+}
+.tmob {
+  font-family: 'Myriad Pro Bold Condensed';
+font-size: 30px;
+margin: 30px 0 -20px 0 !important;
+  display: none;
+}
+#conmobil{
+  display: none;
 }
 /*styles for mobile*/ 
 
 @media (max-width: 767px) {
   .boxup{
+    display: block;
     padding: 5px;
     background-color: #001278;
     border-bottom: 2px solid #F0047F;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10000;
   }
   .menu-sup{
     display: none;
   }
+  .bar {
+    float: left;
+  }
+  .bar p{
+    padding: 0;
+    margin: 1px 0 0;
+  }
   .bar span{
     background-color: #001278;
   }
-  .navbar{
-    padding: 20px;
+
+.navbar{
+    background-image: none;
+    /*background-color: #fff;*/
+    padding: 10px 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
   }
   .logo {
-  margin: 0px 30px 5px 0;
+  margin: 5px auto 5px ;
+  width: 150px;
 }
   .mega-dropdown a{
     background-color: rgba( 255, 255, 255, 0.7);
@@ -301,12 +359,60 @@ font-size: 18px;
     display: none;
   }
   .busc2{
-    margin: 10px 10px 0 0;
+    text-align: center;
+    margin: 85px auto;
     display: block;
   }
+  .menucar {
+  display: inline-block;
+  float: right;
+  margin: 15px 0;
+}
+.slide .imgpc{
+  display: none !important;
+  border: 1px solid red;
+}
+.slide .imgmobil {
+  display: block !important;
+  width: auto;
+  height: 300px;
+}
+.bannerhome{
+  margin-top: 162px;
+}
+#tienda {
+  display: none;
+}
+#tienda-mobil {
+  display: block;
+}
+#tienda-mobil .indic{
+  bottom: -30px;
+}
+#tienda-mobil .indic li{
+  background-color: #CCCCCC;
+}
+#tienda-mobil .indic .active{
+  background-color: #BA007C;
+}
+.tmob {
+  display: block;
+}
+#consejos-1 {
+  display: none;
+}
+#conmobil{
+  display: block;
 
 }
+.emplmobil{
+  margin: 0 20px 0 -20px;
+}
+.actve-scroll{
+  border:1px solid red;
+}
 
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar{
     padding: 10px;
@@ -343,7 +449,7 @@ font-size: 18px;
 @media (min-width: 992px) and (max-width: 1199px){
    .menu-sup{
     display: none;
-  }s
+  }
 
 }
 
@@ -374,7 +480,7 @@ font-size: 18px;
 }
 .list-foot li a{
   font-family: 'Myriad Pro Light Condensed';
-  color: #fff;
+  color: #AAAAAA;
   font-size: 18px;
   padding: 0;
 }
@@ -382,7 +488,8 @@ font-size: 18px;
     font-family: 'Myriad Pro Light Condensed';
     color: #fff;
     font-size: 20px;
-    display: inline-block;
+    display: block;
+    text-align: right;
 }
 .redes-foot{
   display: inline-block;
@@ -437,6 +544,17 @@ border-radius: 0;
   line-height: 1;
   margin: 10px 0;
 }
+.list-f-pago{
+  text-align: right;
+}
+.list-f-pago li{
+display: inline-block;
+margin: 4px 8px;
+}
+hr.hrfoot {
+    border-top: 1px solid #262626;
+}
+
 /*styles for mobile -FOOTER-*/ 
 
 @media (max-width: 767px) {
@@ -657,6 +775,13 @@ margin: 20px 0 20px 0;
 #marcas .product{
   margin: 0 0 5px 0;
 }
+.consejos .c-1 {
+  margin-bottom: 40px;
+}
+.consejos .c-1 img, .consejos .c-2 img{
+  width: 100%;
+  border:1px solid #333333;
+  }
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -672,10 +797,9 @@ margin: 20px 0 20px 0;
 }
 .consejos .c-1 img, .consejos .c-2 img{
   width: 100%;
-  border-left:1px solid #333333; 
-  border-top:1px solid #333333;
-  border-bottom:1px solid #333333;
+  border:1px solid #333333;
   }
+
 
   .c-box span, .c-box2 span{
   font-size: 20px;
@@ -714,11 +838,11 @@ margin: 20px 0 20px 0;
   font-family: 'Myriad Pro Regular';
   font-size: 12px;
 }
-.left{
+.izq{
   border-bottom: 3px solid #01A0C6;
   display: inline-block;
 }
-.right{
+.der{
   float: right;
   border-bottom: 3px solid #01A0C6;
 }
@@ -1075,19 +1199,21 @@ margin: 20px 0 20px 0;
   color: #4D4D4D;
   font-size: 17px;
   margin: 18px 0;
+  text-align:center;
 }
 .car-text2{
   color: #4D4D4D;
   font-size: 24px;
-  margin: 15px 0;
+  margin: 15px 8px;
   display: inline-block;
+  float: right;
 }
 
 .carro .conte{
-  background-color: #f2f2f2;
+
   padding: 12px 10px;
 }
-.carro img {
+.img-car {
     margin: 0 auto;
     min-height: 80px;
     max-height: 80px;
@@ -1103,38 +1229,42 @@ margin: 20px 0 20px 0;
   font-size: 17px;
   display: block;
 }
+.derec{
+  text-align: right;
+}
 .carro input[type="number"]{
-  position: absolute;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
     width: 120px; /*ancho por defecto*/
     background: #fff url('../img/icon/flecha.png') no-repeat 84px center;
     outline: none; /* ocultar el fucos automático de los input */
-    margin: 8px 0;
+
 }
 .carro button{
-  position: absolute;
-  right: 0;
-  margin:6px 3px;
+  float: right;
+  margin:15px 0 6px 10px;
   background-color: #01A0C6;
   color: #fff;
   border: 0;
   padding: 5px 10px;
  }
- .carro .conte2 {
+ .conte2 {
   background:#E5E5E5; 
   color:#001689;
   margin: 4px 0;
 }
- .carro .conte2 p{
+ .conte2 p{
   color: #4D4D4D;
   font-size: 17px;
-  margin: 5px 0;
+  margin: 5px ;
+  text-align: right;
 }
- .carro .conte2 .gran{
+.conte2 .gran{
   color: #4D4D4D;
   font-size: 24px;
-  margin: 0;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: normal;
 }
  .carro .conte3 p{
   font-family: 'Myriad Pro Bold Condensed';
@@ -1186,7 +1316,139 @@ margin: 20px 0 20px 0;
     padding: 10px 15px;
     font-family: 'Myriad Pro Condensed';
   }
+  .carro th, .carro td {
+    font-weight: normal;
+  }
+  .carro .conte2 tr{
+   border-top: 4px solid #fff;
+  }
   /*styles for mobile -CARRITO_*/ 
+
+/*
+  Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+  */
+  @media
+  only screen 
+  and (max-width: 760px), (min-device-width: 768px) 
+  and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    
+    .carro table .carro thead, .carro tbody, tfoot, .carro th, .carro td, .carro  tr {
+      display: block !important;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .carro {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .carro thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    .carro tr {
+      margin: 0 0 1rem 0;
+    }
+
+    .carro tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+    .carro td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+      background-color: #f5f7f7;
+      display: block !important;
+    }
+    .carro td p, .carro td p span {
+      font-size: 12px;
+    }
+   
+
+    .carro td:before, .conte td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 0;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      padding: 6px;
+      color:  #01a0c6;
+    }
+    .carro .conte {
+  font-size: 12px !important;}
+
+  .conte2 tr{
+    display: block;
+   }
+  .carro .simpl {
+  padding: 2px 5px;
+   background-color: #fff;
+    font-family: 'Myriad Pro Regular';
+    color: #bbbbbb;
+    text-align: right;
+    font-weight: normal;
+    line-height: 1;
+    width: 60%;
+    display: inline-block !important;
+}
+.carro .simpl p{
+    font-size: 18px;
+}
+ 
+    .carro .sin{
+      padding-left: 5px;
+      background-color: #bbbbbb;
+      border:0;
+      color: #fff;
+      display: inline-block !important;
+      width: 39%;
+    }
+
+   .l-cod{
+  margin: 50px 0 3px;
+  }
+  .derec{
+  text-align: left;
+  padding:10px 0 0;
+}
+
+.claro {
+  margin: 5px 0 0;
+}
+
+
+  .carro input[type="number"]{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 80px; /*ancho por defecto*/
+    background: #fff url('../img/icon/flecha.png') no-repeat 84px center;
+    outline: none; /* ocultar el fucos automático de los input */
+    margin: 5px 0;
+  }
+
+    /*
+    Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    */
+    .carro .con:nth-of-type(1):before { content: "Imagen"; }
+    .carro .con:nth-of-type(2):before { content: "Producto"; }
+    .carro .con:nth-of-type(3):before { content: "Cantidado"; }
+    .carro .con:nth-of-type(4):before { content: "Precio"; }
+    .carro .con:nth-of-type(5):before { content: "Descuento"; }
+    .carro .con:nth-of-type(6):before { content: "Total"; }
+
+  }
+
+
 
 @media (max-width: 767px) {
  
@@ -1243,14 +1505,14 @@ margin: 20px 0 20px 0;
 /*@media (min-width: 1200px) and (max-width: 1340px){}*/
 /** Product Style **/
 .productDetail{
-
+width: 100%;
 }
 .titu-product{
   color: #001277;
   font-size: 30px;
   display: block;
   border-bottom: 1px solid #001277;
-  padding: 5px;
+  
 }
 .titu-product span{
   color: #01A0C6;
@@ -1279,6 +1541,13 @@ margin: 0;
   font-size: 40px;
   font-family: 'Myriad Pro Bold Condensed';
   margin: 50px 0 10px;
+}
+.precio-label{
+  color: #01A0C6;
+  text-align: right;
+  font-size: 18px;
+  font-family: 'Myriad Pro Bold Condensed';
+  margin: 0;
 }
 .numer{
   border:1px solid #E5E5E5;
@@ -1319,18 +1588,26 @@ margin: 0;
 /*styles for mobile -PRODUCTO_*/ 
 
 @media (max-width: 767px) {
- .pq{
+
+ /*.pq{
   display: block;
   padding: 20px 0;
   margin: 10px 0 0;
   border-top: 1px solid #001277;
- }
+ }*/
 
 .precio{
-  margin: 70px 0 10px;
+  margin: 1px 0 5px;
+  font-size: 24px;
+
 }
  .descrip{
-  display: none;
+  padding: 0;
+  margin: 0;
+ }
+
+ .descrip li{
+  margin: 0px 0px 20px 0;
  }
  .numer{
   border:1px solid #E5E5E5;
@@ -1366,11 +1643,19 @@ margin: 0;
 .descrip{
   display: none;
  }
+ .precio{
+  margin:20px 0 5px;
+  font-size: 30px;
+
+}
  .pq{
   display: block;
   padding: 20px 0;
   margin: 10px 0 0;
   border-top: 1px solid #001277;
+ }
+ .hr-prodct{
+  display: none;
  }
 }
 
@@ -1379,6 +1664,8 @@ margin: 0;
 }
 
 /*@media (min-width: 1200px) and (max-width: 1340px){}*/
+/* DETALLE CARRITO====*/
+
 .l-cod2{
   color: #606060;
   font-size: 18px;
@@ -1430,35 +1717,51 @@ margin: 0;
   padding: 10px 20px;
   float: right;
 }
+.modal-content{
+  border-radius: 0;
+}
+.head-m {
+  padding: 35px 0 10px;
+  border-bottom: 0;
+}
+.titu-m{
+  background-color: #001277;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.body-m{
+  padding: 10px 20px;
+}
+
 /*
   Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
   */
-  @media
-    only screen 
+  @media only screen 
     and (max-width: 760px), (min-device-width: 768px) 
     and (max-device-width: 1024px)  {
 
     /* Force table to not be like tables anymore */
-    table, thead, tbody, tfoot, th, td, tr {
+    .table-deta table, .table-deta thead, .table-deta tbody, tfoot, .table-deta  th, .table-deta  td, .table-deta  tr {
       display: block;
     }
 
     /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr {
+    .table-deta thead tr {
       position: absolute;
       top: -9999px;
       left: -9999px;
     }
 
-    tr {
+    .table-deta tr {
       margin: 0 0 1rem 0;
     }
       
-    tr:nth-child(odd) {
+    .table-deta tr:nth-child(odd) {
       background: #ccc;
     }
     
-    td {
+    .table-deta td {
       /* Behave  like a "row" */
       border: none;
       border-bottom: 1px solid #eee;
@@ -1467,7 +1770,7 @@ margin: 0;
       background-color: #f5f7f7
     }
 
-    td:before {
+    .table-deta td:before {
       /* Now like a table header */
       position: absolute;
       /* Top/left values mimic padding */
@@ -1479,19 +1782,22 @@ margin: 0;
       padding: 6px;
       color:  #01a0c6;
     }
-     .simpl, .sin{
+
+    .table-deta .simpl {
+      padding-left: 5px;
+      background-color: #01a0c6;
+      border:0;
+      color: #fff;
       display: inline-block;
       width: 50%;
     }
-    .simpl {
-      background-color: #01a0c6 !important;
-      border:0!important;
-      color: #fff!important;
-    }
-    .sin{
-      background-color: #bbbbbb!important;
-      border:0!important;
-      color: #fff !important
+    .table-deta .sin{
+      padding-left: 5px;
+      background-color: #bbbbbb;
+      border:0;
+      color: #fff;
+     display: inline-block;
+      width: 49%;
     }
     .l-cod2{
   margin: 1px 0;
@@ -1505,5 +1811,11 @@ margin: 0;
     .table-deta .con:nth-of-type(3):before { content: "Precio Unitario"; }
     .table-deta .con:nth-of-type(4):before { content: "Desc."; }
     .table-deta .con:nth-of-type(5):before { content: "Total"; }
-
+  }
+  /* navidad  */
+  .lateral1{
+    float: left;
+    width: 200px;
+    position: fixed;
+    bottom: 0;
   }

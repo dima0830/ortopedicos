@@ -10,7 +10,7 @@
 <div class="container">
 <a name="historia">
 
-  <h2 class="titulo left">Historia</h2>
+  <h2 class="titulo izq">Historia</h2>
 </a>
 <div class="clear-fix"></div>
 
@@ -40,6 +40,7 @@ equipo, nos obligan a seguir, eso nos hace que nuestra empresa continúe siendo 
   </div>
 </div>
 </div>
+<div class="espc"></div>
 <a name="mision"></a>
 <div class="box-misi">
 <div class="container">
@@ -51,7 +52,7 @@ equipo, nos obligan a seguir, eso nos hace que nuestra empresa continúe siendo 
   
   <div class="col-md-7">
     
-      <h2 class="titulo right">Misión</h2>
+      <h2 class="titulo der">Misión</h2>
       <div class="clearfix"></div>
 
       <p class="text-right">POLÍTICA DE CALIDAD Y MISIÓN</p><p class="text-right">
@@ -68,7 +69,8 @@ Gerencia General.</p>
 </div>
 </div>
 </div>
-
+</div>
+<div class="espc"></div>
 <div class="container">
 <a name="vision">
   <h2 class="titulo center">Visión</h2></a>
@@ -80,4 +82,27 @@ Todo esto con responsabilidad, seriedad, ética y profesionalismo.</p><p class="
  Gerencia General.
       </p>
 
+</div>
+</div>
+<div class="espc"></div>
+<div class="container">
+<a name="trabaja">
+
+  <h2 class="titulo izq">Trabaja con Nosotros</h2>
+</a>
+<div class="clear-fix"></div>
+
+<div class="row">
+  <div class="col-md-8">
+    <p class="text-justify text-int">
+      Apreciado candidato,</p><p class="text-justify text-int">
+Si es de su interés compartir su hoja de vida con <strong> Ortopédicos Futuro Colombia SAS</strong>, con el único propósito de participar en potenciales procesos de selección, agradecemos su interés y envío al correo <a href="mailto:seleccion@ortopedicosfuturo.com">seleccion@ortopedicosfuturo.com</a>, indicando en el asunto, el área de su especialidad, ejemplo: Ventas, logística, etc.  </p><br><br><p class="text-justify text-int">
+El equipo de selección se pondrá en contacto con usted, en caso de cumplir con el perfil de las vacantes existentes.</p><br><p class="text-justify text-int">
+Le informamos que la empresa no recibe hojas de vida que desee entregar en alguna de nuestras sedes.</p>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <img src="assets/img/trabaja.png" class="img-responsive">
+  </div>
+</div>
 </div>

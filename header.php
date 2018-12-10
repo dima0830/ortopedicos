@@ -19,7 +19,7 @@
 					<li class="ulline2">
 						<a href="#">Registrarse</a>
 					</li >
-					<li class="menucar">
+					<li>
 						<a href="#"><img src="assets/img/icon/car.png"> <span class="boxcar">0</span></a>
 					</li>
 				</ul>
@@ -27,20 +27,44 @@
 		</div>
 	</div>
 </nav>
-<div class="boxup"></div>
-
-  <nav class="navbar">
-  <div class="container">
-    <div class="navbar-header">
-    	<button class="navbar-toggle bar" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<img src="assets/img/logo.png" class="logo">
+<div class="boxup">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-8">
+				<ul>
+					<li class="col-xs-6">
+						<a href="#"><img src="assets/img/icon/here.png"> Dónde estamos</a>
+					</li>
+					<li class="col-xs-6">
+						<a href="#"><img src="assets/img/icon/messenger.png"> Contáctenos</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	
+</div>
+<nav class="navbar">
+  <div class="container">
+  	<div class="navbar-header">
+  		<button class="navbar-toggle bar" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+  			<span class="sr-only">Toggle navigation</span>
+  			<span class="icon-bar"></span>
+  			<span class="icon-bar"></span>
+  			<span class="icon-bar"></span>
+  			<p>Menú</p>
+  		</button>
+  		<a href="#" class="emplmobil">
+  			<img src="assets/img/icon/user2.png">
+  		</a>
+
+  		<img src="assets/img/logo.png" class="logo">
+  		<div class="menucar">
+  			<a href="#"><span class="boxcar2">02</span></a>
+  		</div>
+  	</div>
+
+
 	<div class="collapse navbar-collapse js-navbar-collapse">
 		<ul class="nav navbar-nav">
 			<li class="dropdown mega-dropdown">
@@ -200,19 +224,13 @@ quirúrgico <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></di
                 </form>
               </div>
 			</li>
-
 		</ul>
  
 	</div><!-- /.nav-collapse -->
-	 <div class="busc2">
-                <form action="">
-                  <input type="search" name="nombre" placeholder="Buscar">
-                </form>
-              </div>
-
   </nav>
 
-  
+ <div id="bucas" class="busc2">
+        <input type="search" name="nombre" placeholder="Qué producto buscas?">
+</div>
 
 
-	

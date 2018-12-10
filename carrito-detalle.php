@@ -106,32 +106,126 @@
  				<textarea rows="4"></textarea>
  				<div class="checkbox" style="text-align:right; margin:0;">
  					<label>
- 					<input type="checkbox"><a href="#">Acepto Terminos y Condiciones</a>
+ 						<input type="checkbox"><a href="#">Acepto Terminos y Condiciones</a>
  					</label>
  				</div>
- 				<button class="btn b-deta" data-toggle="modal" data-target="#exampleModalCenter">REALIZAR PAGO</button>
+ 				<button type="button" class="btn b-deta" data-toggle="modal" data-target="#Modalogin">REALIZAR PAGO</button>
+ 				<div class="clearfix"></div><br>
+ 				<button type="button" class="btn b-deta" data-toggle="modal" data-target="#Registre">registro</button>
+
+
  			</div>
  		</div>
  	</form>
  </div>
 
-
  <!-- Modal -->
- <div class="modal" tabindex="-1" role="dialog" id="exampleModalCenter">
- 	<div class="modal-dialog" role="document">
+ <div class="modal fade" id="Modalogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ 	<div class="modal-dialog modal-lg" role="document">
  		<div class="modal-content">
- 			<div class="modal-header">
- 				<h5 class="modal-title">Modal title</h5>
- 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
- 					<span aria-hidden="true">&times;</span>
- 				</button>
+ 			<div class="modal-header head-m">
+ 				<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+ 				<h4 class="modal-title  titu-m" id="myModalLabel">INISIAR SESIÓN CON</h4>
  			</div>
- 			<div class="modal-body">
- 				<p>Modal body text goes here.</p>
+ 			<div class="modal-body body-m">
+ 				<div class="row">
+ 					<div class="col-md-6 col-md-offset-3">
+ 						<form class="logg">
+ 							<label><span>*</span> Nombre</label>
+ 							<input type="text" name="" placeholder="">
+ 							<label><span>*</span>  Contraseña</label>
+ 							<input type="text" name="" placeholder="">
+ 							<div class="checkbox">
+ 								<label>
+ 									<input type="checkbox" value="">
+ 									Recordarme
+ 								</label>
+ 							</div>
+ 							<a href="#">¿Olvide mi Contraseña?</a>
+ 							<button type="submit" class="bton-login">INGRESAR</button>
+ 							<button ttype="button" class="bton-login line" data-toggle="modal" data-target="#Registre">REGISTRARSE</button>
+ 						</form>
+ 						<br>
+ 					</div>
+ 				</div>
  			</div>
- 			<div class="modal-footer">
- 				<button type="button" class="btn btn-primary">Save changes</button>
- 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+ 		</div>
+ 	</div>
+ </div>
+
+
+
+ <!-- Modal  de registro-->
+ <div class="modal fade" id="Registre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ 	<div class="modal-dialog modal-lg" role="document">
+ 		<div class="modal-content">
+ 			<div class="modal-header head-m">
+ 				<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+ 				<h4 class="modal-title  titu-m" id="myModalLabel">INISIAR SESIÓN CON</h4>
+ 			</div>
+ 			<div class="modal-body body-m">
+ 				<form class="logg">
+ 					<div class="row">
+ 						<div class="col-md-5 col-md-offset-1">
+ 							<label><span>*</span> Nombre</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5">
+ 							<label><span>*</span> Apellido</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5 col-md-offset-1">
+ 							<label><span>*</span> Cedula</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5">
+ 							<label><span>*</span> Teléfono</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5 col-md-offset-1">
+ 							<label><span>*</span> Celular</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5">
+ 							<label><span>*</span> Dirección</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5 col-md-offset-1">
+ 							<label><span>*</span> País</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5">
+ 							<label><span>*</span>Departamento</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5 col-md-offset-1">
+ 							<label><span>*</span> Ciudad</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5">
+ 							<label><span>*</span> E-mail</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5 col-md-offset-1">
+ 							<label><span>*</span> Password</label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5">
+ 							<label><span>*</span> Confirmar Password </label>
+ 							<input type="text" name="" placeholder="">
+ 						</div>
+ 						<div class="col-md-5 col-md-offset-1">
+ 						<div class="checkbox">
+ 								<label>
+ 									<input type="checkbox"><a href="#">Acepto Terminos y Condiciones</a>
+ 								</label>
+ 							</div>
+ 						</div>
+ 						<div class="col-md-6 col-md-offset-3">
+ 						<button type="submit" class="bton-login">GUARDAR REGISTRO</button>
+ 						</div>
+ 					</div>
+ 				</form>
  			</div>
  		</div>
  	</div>
