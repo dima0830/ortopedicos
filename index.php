@@ -23,6 +23,7 @@
     <![endif]-->
   </head>
   <body>
+    hola mundo
     <?php include("header.php"); ?>
     <?php include(CURRENT_FILE); ?>
     <?php include("footer.php"); ?>
