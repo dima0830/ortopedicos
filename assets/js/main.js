@@ -4,21 +4,21 @@ $(".fancyb").fancybox();
         padding:    0
     });
 
-    $(".dropdown").focus(            
+    $(".dropdown").focus(
         function() {
             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-            $(this).toggleClass('open');        
+            $(this).toggleClass('open');
         },
         function() {
             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-            $(this).toggleClass('open');       
+            $(this).toggleClass('open');
         }
     );
 
     $('#tienda').carousel({
         interval:   8000
     });
-    
+
      $('#tienda-mobil').carousel({
         interval:   8000
     });
@@ -32,6 +32,19 @@ $(".fancyb").fancybox();
         interval:   7000
     });
 
+    /*Buscador*/
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        // Do something
+        if(scroll > 150) {
+        	$( "#trBuscar" ).show();
+        } else {
+        	$( "#trBuscar" ).hide();
+        }
+    });
+    $( "#trBuscar" ).click(()=>{
+      $( "#inputBuscar" ).focus();
+    });
 
 var $height = $(window).scrollTop();
   if($height > 50) {
@@ -39,9 +52,4 @@ var $height = $(window).scrollTop();
     } else {
         $('#bucas').removeClass('actve-scroll');
     }
-
-
 });
-
-
-
