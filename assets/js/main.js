@@ -4,7 +4,7 @@ $(".fancyb").fancybox();
         padding:    0
     });
 
-    $(".dropdown").focus(
+    $(".dropdown").hover(
         function() {
             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
             $(this).toggleClass('open');
@@ -52,4 +52,14 @@ var $height = $(window).scrollTop();
     } else {
         $('#bucas').removeClass('actve-scroll');
     }
+
+    /* input cantidad */
+
+    $("#flechaArriba").click(function() {
+    $("#campoNumero").val()++;
+    });
+
+    $("#flechaabajo").click(function() {
+    $("#campoNumero").val()--;
+    });
 });

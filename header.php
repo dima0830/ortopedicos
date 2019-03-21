@@ -2,8 +2,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4"></div>
-			<div class="col-md-8">
-				<ul>
+			<div class="col-md-8" >
+				<ul style="padding: 0; text-align: right;">
 					<li>
 						<a href="#"><img src="assets/img/icon/here.png"> Dónde estamos</a>
 					</li>
@@ -19,7 +19,7 @@
 					<li class="ulline2">
 						<a href="#">Registrarse</a>
 					</li >
-					<li>
+					<li >
 						<a href="#"><img src="assets/img/icon/car.png"> <span class="boxcar">0</span></a>
 					</li>
 				</ul>
@@ -30,16 +30,11 @@
 <div class="boxup">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-8">
-				<ul>
-					<li class="col-xs-6">
-						<a href="#"><img src="assets/img/icon/here.png"> Dónde estamos</a>
-					</li>
-					<li class="col-xs-6">
-						<a href="#"><img src="assets/img/icon/messenger.png"> Contáctenos</a>
-					</li>
-				</ul>
+		<div class="col-xs-6 dondezq">
+				<a href="#"><img src="assets/img/icon/here.png"> Dónde estamos</a>
+			</div>
+			<div class="col-xs-6 dondeder">
+				<a href="#"><img src="assets/img/icon/messenger.png"> Contáctenos</a>
 			</div>
 		</div>
 	</div>
@@ -57,10 +52,10 @@
   		<a href="#" class="emplmobil">
   			<img src="assets/img/icon/user2.png">
   		</a>
-
-  		<img src="assets/img/logo.png" class="logo">
-  		<div class="menucar">
-  			<a href="#" id="trBuscar" style="display: none;"><i class="fa fa-search"></i></a>
+  		<a href="home">
+  		<img src="assets/img/logo.png" class="logo"></a>
+  		<div class="menucar" >
+  			<a href="#" id="trBuscar" style="display: none;"><img src="assets/img/icon/lupa2.png"></a>
   			<a href="#"><span class="boxcar2">02</span></a>
   		</div>
   	</div>
@@ -69,8 +64,8 @@
 	<div class="collapse navbar-collapse js-navbar-collapse">
 		<ul class="nav navbar-nav">
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cuidado en casa <br>&nbsp;<div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
-				<ul class="dropdown-menu mega-dropdown-menu">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="margin-top: 8px;">Cuidado en casa</span><br><div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
+				<ul class="dropdown-menu mega-dropdown-menu" >
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
 							<li><a href="#"><img src="assets/img/icon/icon-1.png" class="icon-menu"> Camas</a></li>
@@ -95,7 +90,7 @@
 				</ul>
 			</li>
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Deporte<br>&nbsp;<div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Deporte y<span>Rehabilitación</span><div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
 				<ul class="dropdown-menu mega-dropdown-menu">
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
@@ -108,10 +103,10 @@
 				</ul>
 			</li>
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Prevención y <br>
-cuidado de várices <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Prevención y <span>
+cuidado de várices</span> <div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
 				<ul class="dropdown-menu mega-dropdown-menu">
-					<li class="col-md-2 col-md-offset-3  col-sm-4  col-sm-offset-1">
+					<li class="col-md-3 col-md-offset-3  col-sm-4  col-sm-offset-1">
 						<ul>
 							<li><a href="#"><img src="assets/img/icon/icon-1.png" class="icon-menu"> Compresión Baja 8-15 MMHG</a></li>
 							<li><a href="#"><img src="assets/img/icon/icon-5.png" class="icon-menu"> Compresión Media 15-20 MMHG</a></li>
@@ -119,7 +114,7 @@ cuidado de várices <div class="icon-sub"><img src="assets/img/icon/angle-down.p
 							<li><a href="#"><img src="assets/img/icon/icon-3.png" class="icon-menu"> Compresión Extra-Firme 30-40 MMHG</a></li>
 						</ul>
 					</li>
-					<li class="col-md-2 col-sm-4 ">
+					<li class="col-md-3 col-sm-4 ">
 						<ul>
 							<li><a href="#"><img src="assets/img/icon/icon-1.png" class="icon-menu"> Medias Antiembólicas 18 MMHG</a></li>
 							<li><a href="#"><img src="assets/img/icon/icon-5.png" class="icon-menu"> Línea Deportiva </a></li>
@@ -128,8 +123,8 @@ cuidado de várices <div class="icon-sub"><img src="assets/img/icon/angle-down.p
 				</ul>
 			</li>
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cuidado<br>
-del cuerpo <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cuidado<span>
+del cuerpo</span> <div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
 				<ul class="dropdown-menu mega-dropdown-menu">
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
@@ -157,8 +152,8 @@ del cuerpo <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div
 				</ul>
 			</li>
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipo de <br>
-diagnóstico <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipo de <span>
+diagnóstico</span> <div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
 				<ul class="dropdown-menu mega-dropdown-menu">
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
@@ -171,8 +166,8 @@ diagnóstico <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></d
 				</ul>
 			</li>
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Médico<br>
-quirúrgico <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Médico<span>
+quirúrgico</span> <div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
 				<ul class="dropdown-menu mega-dropdown-menu">
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
@@ -183,8 +178,8 @@ quirúrgico <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></di
 				</ul>
 			</li>
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Terapia<br>
-&nbsp;<div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="margin-top: 8px;">Terapia</span>
+<br><div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
 				<ul class="dropdown-menu mega-dropdown-menu">
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
@@ -206,8 +201,8 @@ quirúrgico <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></di
 				</ul>
 			</li>
 			<li class="dropdown mega-dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">¡OFERTAS!<br>
-&nbsp;<div class="icon-sub"><img src="assets/img/icon/angle-down.png"></div></a>
+				<a href="#" class="dropdown-toggle color-mobil" data-toggle="dropdown"><span style="margin-top: 8px;">¡OFERTAS!</span><br>
+<div class="icon-sub"><i class="fa fa-caret-down" aria-hidden="true"></i></div></a>
 				<ul class="dropdown-menu mega-dropdown-menu">
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
@@ -217,9 +212,10 @@ quirúrgico <div class="icon-sub"><img src="assets/img/icon/angle-down.png"></di
 					</li>
 				</ul>
 			</li>
-
-			<li class="dropdown mega-dropdown">
-				 <div class="busc">
+		</ul>
+		<ul class="ulbusc">
+			<li>
+				 <div class="busc" style="display: block;">
                 <form action="">
                   <input type="search" name="nombre" placeholder="Buscar">
                 </form>

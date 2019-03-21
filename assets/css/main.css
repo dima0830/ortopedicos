@@ -163,7 +163,6 @@ a:link{
 }
 /* mega menu*/
 .navbar {
-  background-image: url(../img/header-nav.gif);
   margin: 0;
 }
 .logo {
@@ -179,14 +178,21 @@ a:link{
   margin: 0px 2px;
   color: #001277;
 }
+
 .mega-dropdown a:focus, .mega-dropdown a:hover{
-  background-color: rgba(0, 18, 119, 0.5)!important;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0)!important;
+
+}
+.mega-dropdown a span, .mega-dropdown a span{
+  display: block;
+}
+.mega-dropdown a:focus span, .mega-dropdown a:hover span{
+  display: block;
+  border-bottom: 2px solid #01a0c6;
 }
 
 .mega-dropdown a .icon-sub{
   display: none;
-  color: #01A0C6;
 }
 
 .mega-dropdown a .icon-sub img{
@@ -205,7 +211,7 @@ a:link{
   width: 100%;
   box-shadow: none;
   -webkit-box-shadow: none;
-  background-color: rgba(255, 255, 255,0.9);
+  background-color: rgba(255, 255, 255,0.97);
 }
 .mega-dropdown-menu > li > ul {
   padding: 0;
@@ -224,8 +230,9 @@ a:link{
 .mega-dropdown-menu > li ul > li > a:hover,
 .mega-dropdown-menu > li ul > li > a:focus {
   text-decoration: none;
-  background-color: rgba(240, 4, 127, 0.5)!important;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0)!important;
+  color: #001277;
+  border-bottom: 2px solid #01a0c6;
 }
 .mega-dropdown-menu .dropdown-header {
   font-size: 18px;
@@ -237,16 +244,20 @@ a:link{
   width: 20px;
   margin-right: 5px;
 }
+.ulbusc{
+  float: right;
+}
 .busc{
-  margin: 40px 0 0 20px;
+  margin: 40px 0;
 }
 .busc2{
   display: none;
 }
+
 .busc input[type="search"]{
   position: absolute;
   width: 50px; /*ancho por defecto*/
-  background: #fff url('../img/icon/lupa.png') no-repeat 9px center;
+  background: #fff url('../img/icon/lupa2.png') no-repeat 9px center;
   border: 1px solid #001277;
   padding: 9px 20px 9px 30px;
   -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
@@ -256,10 +267,12 @@ a:link{
   outline: none; /* ocultar el fucos automático de los input */
 }
 .busc input[type="search"]:focus{
-  width: 130px; /*tamaño del boton buscar al hacer click*/
-  padding-left: 40px; /*espacio entre el icono lupa y el placeholder*/
+  width: 100%; /*tamaño del boton buscar al hacer click*/
+  padding-left: 10px; /*espacio entre el icono lupa y el placeholder*/
   color: #000;
   background-color: #FFF;
+  background-position: right;
+  margin-left: -130px;
 }
 
 .busc2 input[type="search"]{
@@ -286,6 +299,7 @@ a:link{
   font-family: 'Myriad Pro Condensed';
   margin: -5px 0;
 }
+
 .slide .imgmobil {
   display: none !important;
 }
@@ -300,189 +314,40 @@ a:link{
 }
 #conmobil{
   display: none;
-}
-/*styles for mobile*/
-
-@media (max-width: 767px) {
-  .boxup{
-    display: block;
-    padding: 5px;
-    background-color: #001278;
-    border-bottom: 2px solid #F0047F;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10000;
-  }
-  .menu-sup{
-    display: none;
-  }
-  .bar {
-    float: left;
-  }
-  .bar p{
-    padding: 0;
-    margin: 1px 0 0;
-  }
-  .bar span{
-    background-color: #001278;
-  }
-
-  .navbar{
-    background-image: none;
-    /*background-color: #fff;*/
-    padding: 10px 10px 0;
-    position: fixed;
-    top: 0;
-    z-index: 999999;
-    width: 100%;
-  }
-  .logo {
-    margin: 5px auto 5px ;
-    width: 150px;
-  }
-  .mega-dropdown a{
-    background-color: rgba( 255, 255, 255, 0.7);
-    padding: 10px !important;
-  }
-
-  .mega-dropdown a .icon-sub{
-    display: inline-block;
-  }
-
-  .mega-dropdown a br{
-    display: none;
-  }
-
-  .busc{
-    margin: 40px 10px 0 0;
-    display: none;
-  }
-  .busc2{
-    text-align: center;
-    margin: 85px auto;
-    display: block;
-  }
-  .menucar {
-    display: inline-block;
-    float: right;
-    margin: 15px 0;
-  }
-  .slide .imgpc{
-    display: none !important;
-    border: 1px solid red;
-  }
-  .slide .imgmobil {
-    display: block !important;
-    width: auto;
-    height: 300px;
-  }
-  .bannerhome{
-    margin-top: 162px;
-  }
-  #tienda {
-    display: none;
-  }
-  #tienda-mobil {
-    display: block;
-  }
-  #tienda-mobil .indic{
-    bottom: -30px;
-  }
-  #tienda-mobil .indic li{
-    background-color: #CCCCCC;
-  }
-  #tienda-mobil .indic .active{
-    background-color: #BA007C;
-  }
-  .tmob {
-    display: block;
-  }
-  #consejos-1 {
-    display: none;
-  }
-  #conmobil{
-    display: block;
-
-  }
-  .emplmobil{
-    margin: 0 20px 0 -20px;
-  }
-  .actve-scroll{
-    border:1px solid red;
-  }
-
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .navbar{
-    padding: 10px;
-  }
-  .mega-dropdown a{
-    background-color: rgba( 255, 255, 255, 0.1);
-    padding: 5px 10px 2px!important ;
-    margin-top: 5px;
-  }
-
-  .busc{
-    margin: 10px 10px 0 5px;
-  }
-  .busc input[type="search"]{
-    position: absolute;
-    width: 40px; /*ancho por defecto*/
-    background: #fff url('../img/icon/lupa.png') no-repeat 3px center;
-    border: 1px solid #001277;
-    padding: 9px 20px 9px 20px;
-    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
-    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
-    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
-    transition: all .5s; /* transición de .5seg a todos los elementos*/
-    outline: none; /* ocultar el fucos automático de los input */
-  }
-  .busc input[type="search"]:focus{
-    width: 130px; /*tamaño del boton buscar al hacer click*/
-    padding-left: 40px; /*espacio entre el icono lupa y el placeholder*/
-    color: #000;
-    background-color: #FFF;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px){
-  .menu-sup{
-    display: none;
-  }
-
-}
-
-@media (min-width: 1200px) and (max-width: 1340px){
 
 }
 /*fin mega-menu styles for mobile===================*/
 /* stilos footer==========*/
 .box-foot{
-  background: #161616;
-  padding: 40px 0 20px;
+  background: #3e3a39;
+  padding-top: 20px;
   margin: 30px 0 0;
 }
 
 .titu-foot{
   font-family: 'Myriad Pro Light Condensed';
   color: #fff;
+  font-size: 22px;
+}
+.inscri{
+  color: #fff;
   font-size: 20px;
 }
 .list-foot{
   padding: 0;
-  margin: 0;
+  margin: 20px 0;
   color: #fff;
 }
 .list-foot li{
-  margin: 0;
+  margin: -8px 0;
   padding: 0,
 }
 .list-foot li a{
   font-family: 'Myriad Pro Light Condensed';
-  color: #AAAAAA;
-  font-size: 18px;
+  color: #fff;
+  font-size: 20px;
   padding: 0;
+  margin: 0;
 }
 .titu-foot2{
   font-family: 'Myriad Pro Light Condensed';
@@ -499,17 +364,22 @@ a:link{
 }
 .redes-foot li{
   display: inline-block;
+  padding: 8px;
 }
 .redes-foot li a{
   margin: 0 8px;
 }
 .boton{
+  padding: 3px 12px;
+  height: 26px;
   border-radius: 0;
   color: #fff;
   background-color: #F0047F;
 }
 .bor{
+  padding:6px 12px;
   border-radius: 0;
+  height: 26px;
 }
 .link-polit{
   display: block;
@@ -518,7 +388,7 @@ a:link{
 }
 .link-polit a{
   color: #fff;
-  margin: 3px 0;
+  margin: 3px 0 0;
   display: inline-block;
 }
 .link-polit input {
@@ -540,9 +410,10 @@ a:link{
   margin-bottom: 5px;
 }
 .derech .comp2{
+  font-family: 'Myriad Pro Light Condensed';
   font-size: 20px;
   line-height: 1;
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 .list-f-pago{
   text-align: right;
@@ -554,32 +425,6 @@ a:link{
 hr.hrfoot {
   border-top: 1px solid #262626;
 }
-
-/*styles for mobile -FOOTER-*/
-
-@media (max-width: 767px) {
-  .box-foot{
-    padding: 20px 0 20px;
-  }
-  .titu-foot{
-    margin: 15px 0px 5px;
-    color: #02A1CB;
-  }
-  .titu-foot2{
-    margin-top: 30px;
-    color: #fff;
-    border: 1px solid #161616;
-  }
-  .redes-foot{
-    margin-top: 30px;
-  }
-}
-/*@media (min-width: 768px) and (max-width: 991px) {}
-
-@media (min-width: 992px) and (max-width: 1199px){}
-
-@media (min-width: 1200px) and (max-width: 1340px){}*/
-
 
 /* home*/
 .line-head {
@@ -595,24 +440,30 @@ hr.hrfoot {
   padding: 0;
   font-family: 'Myriad Pro Condensed';
 }
-
+.product-{
+  display: block;
+ border: 1px solid #333; 
+}
 .products .product {
   position: relative;
-  display: block;
-  border: 1px solid #333333;
-  padding:  0;
-  overflow: hidden;
+    border: 1px solid #333;
+     display: flex;
+     text-align: center;
+     background-color: #fff;
+}
+.products .product .product-img{
+  width: 100%;
+  height: 250px;
+  margin: 5px;
   background-color: #fff;
 }
-
 .products .product img {
-  margin: 0 auto;
-  min-height: 200px;
-  max-height: 150px;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 .products .price {
+   margin: 0 auto;
   display: block;
   color: #01a0c6;
   text-align: right;
@@ -639,6 +490,20 @@ hr.hrfoot {
   white-space: nowrap;
   overflow: hidden;
 }
+
+@media (max-width: 1199px){
+ .products .product .product-img{
+  width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+.redes-foot li{
+  display: inline-block;
+  padding: 4px;
+}
+}
+
 .consejos {
   margin-top: 50px;
 }
@@ -713,7 +578,7 @@ hr.hrfoot {
   padding: 25px 0 10px 0;
 }
 
-.products .product .discount {
+.products .product .discount{
   position: absolute;
   display: block;
   top: 0;
@@ -746,19 +611,21 @@ hr.hrfoot {
   display: block;
   color: #F0047F;
   text-align: right;
-  font-size: 28px;
+  margin:10px 0 0;
+  font-size: 35px;
 }
 .products .price2 .antes{
   font-family: 'Myriad Pro Light Condensed';
   color: #05A1CA;
   display: inline-block;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration:line-through;
 }
 .products .price2 a {
   text-decoration-line: none;
   color: #F0047F;
 }
+
 .products .m-product img {
   margin: 0 auto;
   min-height: 20px !important;
@@ -766,49 +633,6 @@ hr.hrfoot {
   overflow: hidden;
 }
 
-/*styles for mobile -HOME_*/
-
-@media (max-width: 767px) {
-  .c-box, .c-box2{
-    height: auto;
-  }
-  #marcas .product{
-    margin: 0 0 5px 0;
-  }
-  .consejos .c-1 {
-    margin-bottom: 40px;
-  }
-  .consejos .c-1 img, .consejos .c-2 img{
-    width: 100%;
-    border:1px solid #333333;
-  }
-
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .c-box, .c-box2{
-    height: auto;
-    padding: 12px;
-  }
-  .consejos .c-1 .col-sm-6, .consejos .c-2 .col-sm-6 {
-    margin:0;
-    padding: 0;
-    font-family: 'Myriad Pro Light Condensed';
-    font-size: 18px;
-  }
-  .consejos .c-1 img, .consejos .c-2 img{
-    width: 100%;
-    border:1px solid #333333;
-  }
-
-
-  .c-box span, .c-box2 span{
-    font-size: 20px;
-  }
-}
-
-/*@media (min-width: 992px) and (max-width: 1199px){}
-
-@media (min-width: 1200px) and (max-width: 1340px){}*/
 /* nosotros*/
 .box-titu{
   background: #E5E5E5;
@@ -892,6 +716,7 @@ hr.hrfoot {
 }
 .form-busc{
   margin: 40px 0;
+  border: 1px solid red;
 }
 .btn-tien {
   border-radius: 0;
@@ -910,6 +735,7 @@ hr.hrfoot {
   font-family: 'Myriad Pro Light';
   outline: none;
   width: 100%;
+
 }
 .btn-list {
   padding: 8px;
@@ -1055,33 +881,6 @@ hr.hrfoot {
   border-bottom-right-radius:  0px !important;
 }
 
-/*styles for mobile -HOME_*/
-
-@media (max-width: 767px) {
-  .btn-list{
-    display: none;
-  }
-
-}
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px){
-  .btn-list {
-    padding: 8px 2px;
-  }
-  .btn-list a{
-    margin: 0 6px;
-    font-size: 16px;
-  }
-  .btn-list a i{
-    font-size: 20px;
-    margin-right: 4px;
-  }
-}
-
-/*@media (min-width: 1200px) and (max-width: 1340px){}*/
 .box-tienda2 {
   margin: 30px 0;
 }
@@ -1152,11 +951,7 @@ hr.hrfoot {
 .p-small a{
   color: #606060;
 }
-@media (min-width: 992px) and (max-width: 1199px){
-  .p-small a{
-    font-size: 14px;
-  }
-}
+
 .logg {
   margin: 30px 0;
 }
@@ -1210,7 +1005,6 @@ hr.hrfoot {
 }
 
 .carro .conte{
-
   padding: 12px 10px;
 }
 .img-car {
@@ -1232,18 +1026,52 @@ hr.hrfoot {
 .derec{
   text-align: right;
 }
-.carro input[type="number"]{
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  width: 120px; /*ancho por defecto*/
-  background: #fff url('../img/icon/flecha.png') no-repeat 84px center;
-  outline: none; /* ocultar el fucos automático de los input */
 
+/* nuevos estilos carrito */
+.carro {
+  width: 100%;
 }
-.carro button{
+ .carro input[type="number"]{
+    border:0;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100px; /*ancho por defecto*/
+    background: #fff url('../img/icon/flecha.png') no-repeat 65px center;
+    outline: none; /* ocultar el fucos automático de los input */
+    margin: 4px 0;
+    display: inline-block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .btn-actu {
+    background-color: #01a0c6;
+    margin-left: 0px;
+    color: #fff;
+    padding: 7px 6px;
+    border: 0;
+  }
+  .list-car{
+    padding-right: 30px;
+  }
+  .total-car{
+    font-size: 35px !important;
+    font-weight: bold;
+  }
+  .gran-car{
+     font-size: 35px !important;
+    font-weight: bold;
+    color:  #01a0c6 !important;
+  }
+/*fin  nuevos estilos carrito */
+.carro .delet{
   float: right;
+  border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
   margin:15px 0 6px 10px;
-  background-color: #01A0C6;
+  background-color: #f0047f;
   color: #fff;
   border: 0;
   padding: 5px 10px;
@@ -1276,20 +1104,20 @@ hr.hrfoot {
 .claro {
   background-color: #01A0C6;
   color: #001277;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  padding: 6px 12px;
+  border-top-left-radius:20px;
+  border-bottom-left-radius: 20px;
+  padding: 6px 20px;
   font-size: 17px;
   float: right;
-  margin: 50px 0 0;
+  margin: 20px 0 0;
 }
 .oscuro {
   display: block;
   background-color:#001277;
   color:#fff;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  padding: 6px 12px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 6px 20px;
   font-size: 17px;
   float: right;
   margin: 10px 0;
@@ -1309,8 +1137,9 @@ hr.hrfoot {
   width: 100%;
 }
 .btn-cod{
-  border-radius: 0;
-  background-color: #001277;
+   border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+  background-color: #f0047f;
   color: #fff;
   font-size: 16px;
   padding: 10px 15px;
@@ -1319,149 +1148,90 @@ hr.hrfoot {
 .carro th, .carro td {
   font-weight: normal;
 }
-.carro .conte2 tr{
+.carro .conte2 {
   border-top: 4px solid #fff;
 }
-/*styles for mobile -CARRITO_*/
-
-/*
-Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
-*/
-@media
-only screen
-and (max-width: 760px), (min-device-width: 768px)
-and (max-device-width: 1024px)  {
-
-  /* Force table to not be like tables anymore */
-
-  .carro table .carro thead, .carro tbody, tfoot, .carro th, .carro td, .carro  tr {
-    display: block !important;
+/*styles for mobile -CARRITO_ TABLAS====*/
+@media (min-width: 992px) and (max-width: 1199px){ 
+  .carro .conte {
+  font-size:20px;
+}
+.carro input[type="number"]{
+    border:0;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 95px; /*ancho por defecto*/
+    background: #fff url('../img/icon/flecha.png') no-repeat 65px center;
+    outline: none; /* ocultar el fucos automático de los input */
+    margin: 4px 0;
+    display: inline-block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-  .carro {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .carro thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  .carro tr {
-    margin: 0 0 1rem 0;
-  }
-
-  .carro tr:nth-child(odd) {
-    background: #ccc;
-  }
-
-  .carro td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-    background-color: #f5f7f7;
-    display: block !important;
-  }
-  .carro td p, .carro td p span {
-    font-size: 12px;
-  }
-
-
-  .carro td:before, .conte td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 0;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    padding: 6px;
-    color:  #01a0c6;
+   .products .price2 {
+  font-size: 27px;
+}
+.products .price2 .antes{
+  font-size: 22px;
+}
+.int .productFooter {
+    font-size: 20px;
   }
   .carro .conte {
-    font-size: 12px !important;}
+  font-size:18px;
+}
+.c-box, .c-box2{
+  padding: 30% 0;
+  height: auto;
+}
+.c-box span, .c-box2 span{
+  font-size: 20px;
+}
 
-    .conte2 tr{
-      display: block;
-    }
-    .carro .simpl {
-      padding: 2px 5px;
-      background-color: #fff;
-      font-family: 'Myriad Pro Regular';
-      color: #bbbbbb;
-      text-align: right;
-      font-weight: normal;
-      line-height: 1;
-      width: 60%;
-      display: inline-block !important;
-    }
-    .carro .simpl p{
-      font-size: 18px;
-    }
-
-    .carro .sin{
-      padding-left: 5px;
-      background-color: #bbbbbb;
-      border:0;
-      color: #fff;
-      display: inline-block !important;
-      width: 39%;
-    }
-
-    .l-cod{
-      margin: 50px 0 3px;
-    }
-    .derec{
-      text-align: left;
-      padding:10px 0 0;
-    }
-
-    .claro {
-      margin: 5px 0 0;
-    }
-
-
-    .carro input[type="number"]{
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      width: 80px; /*ancho por defecto*/
-      background: #fff url('../img/icon/flecha.png') no-repeat 84px center;
-      outline: none; /* ocultar el fucos automático de los input */
-      margin: 5px 0;
-    }
-
-    /*
-    Label the data
-    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
-    */
-    .carro .con:nth-of-type(1):before { content: "Imagen"; }
-    .carro .con:nth-of-type(2):before { content: "Producto"; }
-    .carro .con:nth-of-type(3):before { content: "Cantidado"; }
-    .carro .con:nth-of-type(4):before { content: "Precio"; }
-    .carro .con:nth-of-type(5):before { content: "Descuento"; }
-    .carro .con:nth-of-type(6):before { content: "Total"; }
-
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .products .price2 {
+  font-size: 20px;
+}
+.products .price2 .antes{
+  font-size: 18px;
+}
+.int .productFooter {
+    font-size: 16px;
   }
-
-
-
-  @media (max-width: 767px) {
-
+  .carro .conte {
+  font-size:18px;
+}
+.carro input[type="number"]{
+    border:0;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 47px; /*ancho por defecto*/
+    background: #fff;
+    outline: none; /* ocultar el fucos automático de los input */
+    margin: 4px 0;
+    display: inline-block;
+    appearance:inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 4pX;
   }
-  @media (min-width: 768px) and (max-width: 991px) {
-
+  .btn-actu {
+    font-size:12px;
+    background-color: #01a0c6;
+    margin-left: 0px;
+    color: #fff;
+    padding: 8px 8px 8px 3px;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
-
-  @media (min-width: 992px) and (max-width: 1199px){
-
-  }
-
-  /*@media (min-width: 1200px) and (max-width: 1340px){}*/
+}
 
   /*interna productos========*/
   .int{
@@ -1489,20 +1259,7 @@ and (max-device-width: 1024px)  {
     font-size: 20px;
 
   }
-  /*styles for mobile -INT-PRODUCTOS_*/
 
-  @media (max-width: 767px) {
-
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-
-  }
-
-  @media (min-width: 992px) and (max-width: 1199px){
-
-  }
-
-  /*@media (min-width: 1200px) and (max-width: 1340px){}*/
   /** Product Style **/
   .productDetail{
     width: 100%;
@@ -1538,9 +1295,9 @@ and (max-device-width: 1024px)  {
   .precio{
     color: #01A0C6;
     text-align: right;
-    font-size: 40px;
+    font-size: 36px;
     font-family: 'Myriad Pro Bold Condensed';
-    margin: 50px 0 10px;
+    margin: 50px 0 -2px;
   }
   .precio-label{
     color: #01A0C6;
@@ -1550,16 +1307,33 @@ and (max-device-width: 1024px)  {
     margin: 0;
   }
   .numer{
-    border:1px solid #E5E5E5;
+    border:0;
     float: right;
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    width: 120px; /*ancho por defecto*/
-    background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 84px center;
+    width: 165px; /*ancho por defecto*/
+    background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 130px center;
     outline: none; /* ocultar el fucos automático de los input */
     margin: 4px 0;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .numer::placeholder { color: #555555; }
+   .numer2{
+    border:0;
+    float: right;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 150px; /*ancho por defecto*/
+    background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 115px center;
+    outline: none; /* ocultar el fucos automático de los input */
+    margin: 0 0 4px;
     display: block;
     appearance: none;
     -webkit-appearance: none;
@@ -1571,12 +1345,15 @@ and (max-device-width: 1024px)  {
   }
   .li-prod{
     background-color: #001277;
-    padding: 8px 15px;
+    padding: 8px 15px 8px 75px;
     color: #fff;
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
     float: right;
     margin: 4px 0;
+  }
+  .li-prod:hover, .li-prod:focus{
+    color: #fff;
   }
   .icon-pro{
     float: right;
@@ -1585,85 +1362,71 @@ and (max-device-width: 1024px)  {
   .pq{
     display: none;
   }
-  /*styles for mobile -PRODUCTO_*/
-
-  @media (max-width: 767px) {
-
-    /*.pq{
+  .descuento-pc{
+    padding: 8px 20px;
+    font-size: 15px;
+    background-color: #b9007c;
+    color: #fff;
+    position: absolute;
+    z-index: 3;
     display: block;
-    padding: 20px 0;
-    margin: 10px 0 0;
-    border-top: 1px solid #001277;
-    }*/
-
-    .precio{
-      margin: 1px 0 5px;
-      font-size: 24px;
-
-    }
-    .descrip{
-      padding: 0;
-      margin: 0;
-    }
-
-    .descrip li{
-      margin: 0px 0px 20px 0;
-    }
-    .numer{
-      border:1px solid #E5E5E5;
-      float: right;
-      border-top-left-radius:10px;
-      border-bottom-left-radius:10px;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      width: 120px; /*ancho por defecto*/
-      background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 84px center;
-      outline: none; /* ocultar el fucos automático de los input */
-      margin: 6px 0;
-      display: block;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-    .corre{
-      background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 84px center;
-      margin: 0;
-    }
-    .li-prod{
-      background-color: #001277;
-      padding: 8px 15px;
-      color: #fff;
-      border-top-left-radius:10px;
-      border-bottom-left-radius:10px;
-      float: right;
-      margin: 4px 0;
-    }
+    margin: 5px 15px 0 0;
+  top: 0;
+  right: 0;
+  color: #FFFFFF;
   }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .descrip{
-      display: none;
-    }
-    .precio{
-      margin:20px 0 5px;
-      font-size: 30px;
+/* estilos compartir y me gusta*/
+.compa {
+  float: right;
+  display: inline-block;
+}
+.compa li{
+ display: inline-block;
+}
 
-    }
-    .pq{
-      display: block;
-      padding: 20px 0;
-      margin: 10px 0 0;
-      border-top: 1px solid #001277;
-    }
-    .hr-prodct{
-      display: none;
-    }
-  }
+.compa .drow-list{
+  display: inline-block;
+  padding: 0;
+}
+.compa .drow-list a img{
+  margin:-10px 6px 4px;
+}
+.compa .drow-list .subcompartir{
+  padding: 0;
+  margin-right: 10px;
+  display: none;
+  position: absolute;
+  left: 1;
+  text-align: center;
+}
+.compa .drow-list .subcompartir li{
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.compa .drow-list .subcompartir li a {
+  padding: 20px 10px;
+  text-align: center;
+}
+.compa .drow-list .subcompartir li a i{
+  font-size: 16px;
+  padding: 5px 0;
+  color: #fff;
+}
+.compa .drow-list:hover .subcompartir{
+  display: inline-block;
+}
+.compa li .cora i{
+  font-size: 28px;
+  margin: 8px 6px 4px;
+  color: #009bdb;
+}
+.compa  .cora:hover i, .compa  .cora:focus i{
+  color:#b9007c;  
+}
 
-  @media (min-width: 992px) and (max-width: 1199px){
 
-  }
-
-  /*@media (min-width: 1200px) and (max-width: 1340px){}*/
   /* DETALLE CARRITO====*/
 
   .l-cod2{
@@ -1733,89 +1496,727 @@ and (max-device-width: 1024px)  {
   .body-m{
     padding: 10px 20px;
   }
-
-  /*
-  Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
-  */
-  @media only screen
-  and (max-width: 760px), (min-device-width: 768px)
-  and (max-device-width: 1024px)  {
-
-    /* Force table to not be like tables anymore */
-    .table-deta table, .table-deta thead, .table-deta tbody, tfoot, .table-deta  th, .table-deta  td, .table-deta  tr {
-      display: block;
-    }
-
-    /* Hide table headers (but not display: none;, for accessibility) */
-    .table-deta thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-
-    .table-deta tr {
-      margin: 0 0 1rem 0;
-    }
-
-    .table-deta tr:nth-child(odd) {
-      background: #ccc;
-    }
-
-    .table-deta td {
-      /* Behave  like a "row" */
-      border: none;
-      border-bottom: 1px solid #eee;
-      position: relative;
-      padding-left: 50%;
-      background-color: #f5f7f7
-    }
-
-    .table-deta td:before {
-      /* Now like a table header */
-      position: absolute;
-      /* Top/left values mimic padding */
-      top: 0;
-      left: 6px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
-      padding: 6px;
-      color:  #01a0c6;
-    }
-
-    .table-deta .simpl {
-      padding-left: 5px;
-      background-color: #01a0c6;
-      border:0;
-      color: #fff;
-      display: inline-block;
-      width: 50%;
-    }
-    .table-deta .sin{
-      padding-left: 5px;
-      background-color: #bbbbbb;
-      border:0;
-      color: #fff;
-      display: inline-block;
-      width: 49%;
-    }
-    .l-cod2{
-      margin: 1px 0;
-    }
-    /*
-    Label the data
-    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
-    */
-    .table-deta .con:nth-of-type(1):before { content: "Producto"; }
-    .table-deta .con:nth-of-type(2):before { content: "Cantidad"; }
-    .table-deta .con:nth-of-type(3):before { content: "Precio Unitario"; }
-    .table-deta .con:nth-of-type(4):before { content: "Desc."; }
-    .table-deta .con:nth-of-type(5):before { content: "Total"; }
+  /*ESTILOS BOTON CERRAR MODAL*/
+  .close-P{
+    background-color: #f0047f;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    margin: -10px -15px 0 0;
+    border:0;
+    border-radius: 20px;
   }
-  /* navidad  */
-  .lateral1{
-    float: left;
-    width: 200px;
+
+/*
+=====TABLAS====
+*/
+@media only screen
+and (max-width: 760px){
+
+  /* Force table to not be like tables anymore */
+  .table-deta table, .table-deta thead, .table-deta tbody, tfoot, .table-deta  th, .table-deta  td, .table-deta  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .table-deta thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-deta tr {
+    margin: 0 0 1rem 0;
+  }
+
+  .table-deta tr:nth-child(odd) {
+    background: #ccc;
+  }
+
+  .table-deta td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    background-color: #f5f7f7
+  }
+
+  .table-deta td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    padding: 6px;
+    color:  #01a0c6;
+  }
+
+  .table-deta .simpl {
+    padding-left: 5px;
+    background-color: #01a0c6;
+    border:0;
+    color: #fff;
+    display: inline-block;
+    width: 50%;
+  }
+  .table-deta .sin{
+    padding-left: 5px;
+    background-color: #bbbbbb;
+    border:0;
+    color: #fff;
+    display: inline-block;
+    width: 49%;
+  }
+  .l-cod2{
+    margin: 1px 0;
+  }
+  /*
+  Label the data
+  You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+  */
+  .table-deta .con:nth-of-type(1):before { content: "Producto"; }
+  .table-deta .con:nth-of-type(2):before { content: "Cantidad"; }
+  .table-deta .con:nth-of-type(3):before { content: "Precio Unitario"; }
+  .table-deta .con:nth-of-type(4):before { content: "Desc."; }
+  .table-deta .con:nth-of-type(5):before { content: "Total"; }
+}
+
+.mobil{
+  display: none;
+}
+.emplmobil{display: none;}
+/*styles for mobile ==============================================Estilos todos======0=0*/
+/* cambios 19/03/2019 */
+
+.slide .imgpc{
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .mobil{
+    display: block;
+  }
+  .boxup{
+    display: block;
+    padding: 5px;
+    background-color: #001278;
+    /*border-bottom: 2px solid #F0047F;*/
     position: fixed;
     bottom: 0;
+    width: 100%;
+    z-index: 10000;
   }
+  .boxup .dondezq a{
+    text-align: left;
+    padding: 4px 0 0;
+    color: #fff;
+  }
+  .boxup .dondeder a{
+    display: block;
+    text-align: right;
+    padding: 4px 0 0;
+    color: #fff;
+  }
+  .menu-sup{
+    display: none;
+  }
+  .bar {
+    float: left;
+  }
+  .bar p{
+    padding: 0;
+    margin: 1px 0 0;
+  }
+  .bar span{
+    background-color: #001278;
+  }
+
+  .navbar{
+    background-image: none;
+    background-color: #fff;
+    padding: 10px 10px 0 0;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+  }
+  #trBuscar{
+    margin-right: 5px;
+  }
+  .logo {
+    margin: 5px auto 5px ;
+    width: 150px;
+  }
+
+
+
+  /* prueba */
+
+  .mega-dropdown a{
+    padding: 10px !important;
+    border-top: 1px solid #001278;
+  }
+  .mega-dropdown a:focus, .mega-dropdown a:hover {
+    background-color: red!important;
+    color: #fff;
+  }
+
+  .mega-dropdown a .icon-sub{
+    display: inline-block;
+    float: right;
+    color: #CCCCCC;
+  }
+  .mega-dropdown a:focus .icon-sub{
+   transform: rotate(180deg);
+ }
+ .mega-dropdown-menu li ul li{
+   border-top: 1px solid #001278;
+ }
+ .mega-dropdown-menu li a{
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+  border-top:0;
+}
+
+.mega-dropdown-menu li a .icon-menu{
+  display: none;
+}
+.color-mobil{
+  color: #F0047F !important;
+  font-weight: bold;
+}
+.mega-dropdown a br{
+  display: none;
+}
+
+.busc{
+  margin: 40px 10px 0 0;
+  display: none;
+}
+.busc2{
+  text-align: center;
+  margin: 85px auto 10px;
+  display: block;
+}
+.menucar {
+  display: inline-block;
+  float: right;
+  margin: 15px 0;
+}
+.pc {
+  display: none;
+}
+.slide .imgpc{
+  display: none !important;
+  border: 1px solid red;
+}
+.slide .imgmobil {
+  display: block !important;
+  width: auto;
+}
+.bannerhome{
+  margin-top: 10px;
+}
+.titulo-home{
+  font-size: 28px;
+  color: #615B5F;
+  margin: 5px 0 20px 0;
+}
+.titu-mobil{
+  margin: 30px 0 10px;
+}
+#tienda, #tienda2 {
+  display: none;
+}
+#tienda-mobil {
+  display: block;
+}
+.products .indic{
+  bottom: -35px;
+}
+.products .indic li{
+  background-color: #CCCCCC;
+}
+.products .indic .active{
+  background-color: #f0047f;
+}
+.products .marg{
+ bottom: -50px;
+}
+.tmob {
+  display: block;
+}
+#consejos-1 {
+  display: none;
+}
+#conmobil{
+  display: block;
+
+}
+.emplmobil{
+  margin: 0 20px 0 -20px;
+}
+.actve-scroll{
+  /*border:1px solid red;*/
+}
+
+/*styles for mobile -FOOTER-*/
+
+.box-foot-mobil{
+  border-top: 2px solid #F0047F;
+  background: #5B5B5F;
+  padding: 0px 0 50px;
+}
+.list-foot-mobil h4 a .titu-foot{
+  margin: 15px 0px 5px;
+  color: #fff;
+}
+.list-foot-mobil h4 a .titu-foot i{
+  font-size: 14px;
+  margin-right: 5px;
+}
+.list-foot li a{
+  color: #001278;
+}
+.titu-foot2{
+  margin-top:10px;
+  color: #fff;
+}
+.redes-foot-mobil{
+  padding: 0;
+  margin-top: 0px;
+}
+.redes-foot-mobil li{
+  display: inline-block;
+  padding: 0 2px!important;
+  margin: 0;
+}
+
+
+/*styles for mobile -HOME_*/
+
+.c-box, .c-box2{
+  height: auto;
+}
+#marcas .product{
+  margin: 0 0 5px 0;
+}
+.consejos .c-1 {
+  margin-bottom: 40px;
+}
+.consejos .c-1 img, .consejos .c-2 img{
+  width: 100%;
+  border:1px solid #333333;
+}
+
+.products .product img {
+  min-height: 0px;
+  max-height: none;
+  overflow: hidden;
+  width: 100%;
+}  
+.btn-list{
+  display: none;
+}
+/*styles for mobile -PRODUCTO_*/
+
+  /*.pq{
+  display: block;
+  padding: 20px 0;
+  margin: 10px 0 0;
+  border-top: 1px solid #001277;
+  }*/
+
+
+  .descrip{
+    padding: 0;
+    margin: 0;
+  }
+  .descrip li{
+    margin: 0px 0px 20px 0;
+  }
+  .numer{
+    border:1px solid #E5E5E5;
+    float: right;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 120px; /*ancho por defecto*/
+    background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 84px center;
+    outline: none; /* ocultar el fucos automático de los input */
+    margin: 6px 0;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .corre{
+    background: #E5E5E5 url('../img/icon/flecha.png') no-repeat 84px center;
+    margin: 0;
+  }
+  .li-prod{
+    background-color: #001277;
+    padding: 8px 15px;
+    color: #fff;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    float: right;
+    margin: 4px 0;
+  }
+  /* nosotros*/
+  .box-titu{
+   background-color: #001278;
+   padding: 20px 2px;
+ }
+ .box-titu h1{
+  font-size: 17px;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+}
+.box-titu h1 a{
+  color: #fff;
+}
+.box-titu h1 a i{
+  float: right;
+}
+.box-titu h1 span{
+  color: #fff;
+  display: inline-block;
+  margin: 0 5px;
+}
+.bor-produc {
+  border-top: 2px solid #001C88;
+  border-bottom: 2px solid #001C88;
+}
+.titu-product{
+  color: #001277;
+  font-size: 18px;
+  display: block;
+  border:0;
+
+}
+.titu-product span{
+  color: #808081;
+  font-size: 13px;
+}
+.precio{
+  margin: 18px 0 5px;
+  font-size: 20px;
+}
+.espc-prodc {
+  margin: 20px 0;
+}
+.img-det-prod{
+  text-align: center;
+}
+.img-det-prod img{
+  margin: 0 auto;
+}
+.mar-max{
+  bottom: -35px;
+}
+.mar-max li{
+  background-color: #CCCCCC;
+}
+.mar-max .active{
+  background-color: #f0047f;
+}
+.t-azul-mobil{
+  font-size: 22px;
+  color: #009BDB;
+  margin: 20px 0;
+}
+.list-prodt-mobil{
+  padding: 0;
+  color: #717175;
+}
+.li-prod-mobil{
+  display: block;
+  background-color: #f0047f;
+  color:#fff;
+  padding: 17.5px;
+  text-align: center;
+  font-size: 18px;
+}
+.cant-inpt {
+  background:  #001C88;
+}
+.cant-inpt input[type=number]{
+  background-color: #fff;
+  color: #001C88;
+  display: inline-block;
+  margin: 14px 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #001C88;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.flechaup{
+  display: block;
+  float: right;
+
+}
+.flechabj{
+  display: block;
+  float: right;
+
+
+}
+.cant-inpt span i{
+  color: #fff;
+  font-size: 20px
+} 
+
+.edit-mobil{
+  display: block;
+  color: #009BDB;
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
+.delete-mobil{
+  display: block;
+  color: #C1272F;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  font-size: 18px;
+  font-family: 'Myriad Pro Bold Condensed';
+}
+.titu-gris{
+  color: #808080;
+  font-size: 20px;
+  margin: 0;
+}
+.number-mobil{
+  border: 1px solid #001C88;
+  float: right;
+  margin-right: 13px;
+  padding: 5px;
+  border-radius: 2px;
+}
+.ivas{
+  color: #717175;
+  background-color: #F7F7F8;
+  text-align: right;
+  padding: 2px 25px;
+  font-size: 20px;
+}
+.iva-m{
+  background-color: #ECEDEF;
+}
+.total-mobil{
+  font-size: 24px;
+  text-align: right;
+  padding: 2px 25px;
+  color: #434142;
+  font-family: 'Myriad Pro Bold Condensed';
+}
+.total-mobil strong{
+  color: #009ADA;
+}
+.claro {
+  background-color: #001C88;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2px 12px;
+  font-size: 17px;
+  float: right;
+  margin: 10px 0 0;
+}
+.cantidades{
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+}
+.cant-inpt{
+  padding-right: 10px;
+
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar{
+    padding: 10px;
+  }
+  .mega-dropdown a{
+    background-color: rgba( 255, 255, 255, 0.1);
+    padding: 5px 10px 2px!important ;
+    margin-top: 5px;
+  }
+
+  .busc{
+    margin: 10px 10px 0 5px;
+  }
+  .busc input[type="search"]{
+    position: absolute;
+    width: 40px; /*ancho por defecto*/
+    background: #fff url('../img/icon/lupa2.png') no-repeat 3px center;
+    border: 1px solid #001277;
+    padding: 9px 20px 9px 20px;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+  }
+  .busc input[type="search"]:focus{
+    width: 130px; /*tamaño del boton buscar al hacer click*/
+    padding-left: 40px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+  }
+
+  .c-box, .c-box2{
+    height: auto;
+    padding: 12px;
+  }
+  .consejos .c-1 .col-sm-6, .consejos .c-2 .col-sm-6 {
+    margin:0;
+    padding: 0;
+    font-family: 'Myriad Pro Light Condensed';
+    font-size: 18px;
+  }
+  .consejos .c-1 img, .consejos .c-2 img{
+    width: 100%;
+    border:1px solid #333333;
+  }
+
+
+  .c-box span, .c-box2 span{
+    font-size: 20px;
+  }
+
+  .descrip{
+    display: none;
+  }
+  .precio{
+    margin:20px 0 5px;
+    font-size: 30px;
+
+  }
+  .pq{
+    display: block;
+    padding: 20px 0;
+    margin: 10px 0 0;
+    border-top: 1px solid #001277;
+  }
+  .hr-prodct{
+    display: none;
+  }
+
+  .box-foot{
+  background: #3e3a39;
+  padding-top: 20px;
+  margin: 30px 0 0;
+}
+
+.titu-foot{
+  font-family: 'Myriad Pro Light Condensed';
+  color: #fff;
+  font-size: 14px;
+}
+.inscri{
+  color: #fff;
+  font-size: 20px;
+}
+.list-foot{
+  padding: 0;
+  margin: 20px 0;
+  color: #fff;
+}
+.list-foot li{
+  margin: -8px 0;
+  padding: 0,
+}
+.list-foot li a{
+  font-family: 'Myriad Pro Light Condensed';
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+.titu-foot2{
+  font-family: 'Myriad Pro Light Condensed';
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-align: right;
+}
+.redes-foot{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px 0px 0px 15px;
+  float: right;
+}
+.redes-foot li{
+  display: inline-block;
+  width: 31%;
+  text-align: center;
+}
+.redes-foot li a{
+  margin: 0 8px;
+}
+
+.boton{
+  padding: 3px 12px;
+  height: 26px;
+  border-radius: 0;
+  color: #fff;
+  background-color: #F0047F;
+}
+.bor{
+  padding:6px 12px;
+  border-radius: 0;
+  height: 26px;
+}
+.link-polit{
+  display: block;
+  padding: 5px 0;
+  text-align: right;
+}
+.link-polit a{
+  color: #fff;
+  margin: 3px 0 0;
+  display: inline-block;
+}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .menu-sup{
+    display: none;
+  }
+
+  .btn-list {
+    padding: 8px 2px;
+  }
+  .btn-list a{
+    margin: 0 6px;
+    font-size: 16px;
+  }
+  .btn-list a i{
+    font-size: 20px;
+    margin-right: 4px;
+  }
+  .p-small a{
+    font-size: 14px;
+  }
+
+}
+

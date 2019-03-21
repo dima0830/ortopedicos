@@ -111,7 +111,7 @@
  				</div>
  				<button type="button" class="btn b-deta" data-toggle="modal" data-target="#Modalogin">REALIZAR PAGO</button>
  				<div class="clearfix"></div><br>
- 				<button type="button" class="btn b-deta" data-toggle="modal" data-target="#Registre">registro</button>
+ 				<button type="button" class="btn b-deta" data-toggle="modal" data-target="#Registre">REGISTRO</button>
 
 
  			</div>
@@ -123,8 +123,8 @@
  <div class="modal fade" id="Modalogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
  	<div class="modal-dialog modal-lg" role="document">
  		<div class="modal-content">
+ 			<button type="button" class="close-P" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
  			<div class="modal-header head-m">
- 				<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
  				<h4 class="modal-title  titu-m" id="myModalLabel">INISIAR SESIÓN CON</h4>
  			</div>
  			<div class="modal-body body-m">
@@ -143,7 +143,7 @@
  							</div>
  							<a href="#">¿Olvide mi Contraseña?</a>
  							<button type="submit" class="bton-login">INGRESAR</button>
- 							<button ttype="button" class="bton-login line" data-toggle="modal" data-target="#Registre">REGISTRARSE</button>
+ 							<button type="button" class="bton-login line" data-toggle="modal" data-target="#Registre">REGISTRARSE</button>
  						</form>
  						<br>
  					</div>
@@ -159,9 +159,9 @@
  <div class="modal fade" id="Registre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
  	<div class="modal-dialog modal-lg" role="document">
  		<div class="modal-content">
+ 			<button type="button" class="close-P" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
  			<div class="modal-header head-m">
- 				<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
- 				<h4 class="modal-title  titu-m" id="myModalLabel">INISIAR SESIÓN CON</h4>
+ 				<h4 class="modal-title  titu-m" id="myModalLabel">REGISTRARSE</h4>
  			</div>
  			<div class="modal-body body-m">
  				<form class="logg">
