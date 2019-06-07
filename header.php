@@ -68,7 +68,7 @@
 				<ul class="dropdown-menu mega-dropdown-menu" >
 					<li class="col-md-2 col-md-offset-3  col-sm-3  col-sm-offset-1">
 						<ul>
-							<li><a href="#"><img src="assets/img/icon/icon-1.png" class="icon-menu"> Camasssssssss</a></li>
+							<li><a href="#"><img src="assets/img/icon/icon-1.png" class="icon-menu"> Camas</a></li>
 							<li><a href="#"><img src="assets/img/icon/icon-5.png" class="icon-menu"> Movilidad</a></li>
 							<li><a href="#"><img src="assets/img/icon/icon-2.png" class="icon-menu"> Seguridad en el baño</a></li>
 							<li><a href="#"><img src="assets/img/icon/icon-3.png" class="icon-menu"> Incontinencia</a></li>
