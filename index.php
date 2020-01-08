@@ -24,6 +24,7 @@
   </head>
   <body>
     <?php include("header.php"); ?>
+	<h1>holaaaa mundo</h1>
     <?php include(CURRENT_FILE); ?>
     <?php include("footer.php"); ?>
 
